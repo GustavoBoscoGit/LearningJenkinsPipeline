@@ -12,7 +12,7 @@ describe('jenkins pipeline', ()=>{
         cy.get('#lastName').type('test')
         cy.get('#userEmail').type('test.test@gmail.com')
         cy.get('#genterWrapper > .col-md-9 > :nth-child(1) > .custom-control-label').click()
-        cy.get('#userNumber').type('7688889999')
+        cy.get('#userNumber').type('7688879999')
         cy.get('#submit').click({force : true})
     })
 })
