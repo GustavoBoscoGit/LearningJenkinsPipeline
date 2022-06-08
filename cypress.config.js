@@ -6,7 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
-  screenshotOnRunFailure:true,
+  screenshotOnRunFailure: true,
   reporter: "mochawesome",
   reporterOptions: {
     reportTitle: "Cypress Test Report",
