@@ -6,7 +6,8 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
-  reporter: "mochawesome",
+  screenshotOnRunFailure: true,
+  reporter: "cypress-mochawesome-reporter",
   reporterOptions: {
     reportTitle: "Cypress Test Report",
     reportDir: "cypress/report",
@@ -16,5 +17,5 @@ module.exports = defineConfig({
     embeddedScreenshots: true,
     inlineAssets: true,
   },
-  screenshotsFolder: "cypress/screenshot/"
+  screenshotsFolder: "cypress/screenshot/test2.cy.js",
 });
