@@ -16,5 +16,5 @@ module.exports = defineConfig({
     embeddedScreenshots: true,
     inlineAssets: true,
   },
-  screenshotsFolder: "cypress/screenshot/test2.cy.js/jenkins pipeline -- simple test script 2 (failed).png"
+  screenshotsFolder: "cypress/screenshot/test2.cy.js/*"
 });
