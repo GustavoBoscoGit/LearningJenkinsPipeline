@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-06-08T16:08:55.572Z",
-    "end": "2022-06-08T16:09:06.496Z",
-    "duration": 10924,
+    "start": "2022-06-08T16:47:43.400Z",
+    "end": "2022-06-08T16:47:53.450Z",
+    "duration": 10050,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2128b3bf-7232-4413-b34d-dc2fba600d59",
+      "uuid": "e523af1d-3021-483a-bbeb-70b0c5181914",
       "title": "",
       "fullFile": "cypress\\e2e\\test2.cy.js",
       "file": "cypress\\e2e\\test2.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bda220fe-4ce5-4e35-98fa-501c73f2f489",
+          "uuid": "fa3b58b1-db28-4d16-8843-1651bad145ba",
           "title": "jenkins pipeline",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "simple test script",
               "fullTitle": "jenkins pipeline simple test script",
               "timedOut": null,
-              "duration": 8192,
+              "duration": 7223,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.get(':nth-child(2) > :nth-child(1) > .card-up').click();\ncy.get(':nth-child(2) > .element-list > .menu-list > #item-0').click();\ncy.get('#firstName').type('test');\ncy.get('#lastName').type('test');\ncy.get('#userEmail').type('test.test@gmail.com');\ncy.get('#genterWrapper > .col-md-9 > :nth-child(1) > .custom-control-label').click();\ncy.get('#userNumber').type('7688879999');\ncy.get('#submit').click({\n  force: true\n});",
               "err": {},
-              "uuid": "9b3621e7-b236-4905-a403-b30b911b35a7",
-              "parentUUID": "bda220fe-4ce5-4e35-98fa-501c73f2f489",
+              "uuid": "5fb98f40-768d-4378-babf-1c4c76f02fbd",
+              "parentUUID": "fa3b58b1-db28-4d16-8843-1651bad145ba",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9b3621e7-b236-4905-a403-b30b911b35a7"
+            "5fb98f40-768d-4378-babf-1c4c76f02fbd"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8192,
+          "duration": 7223,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -84,7 +84,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": false,
+        "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -94,12 +94,10 @@
     },
     "marge": {
       "options": {
-        "reportDir": "cypress\\report\\.jsons",
-        "charts": true,
-        "reportPageTitle": "Cypress Test Report",
-        "embeddedScreenshots": true,
+        "reportTitle": "Cypress Test Report",
+        "reportDir": "cypress/report",
         "overwrite": false,
-        "html": false,
+        "html": true,
         "json": true
       },
       "version": "6.2.0"
