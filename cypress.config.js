@@ -13,7 +13,8 @@ module.exports = defineConfig({
     overwrite: true,
     html: true,
     json: true,
-    embeddedScreenshots: false,
+    embeddedScreenshots: true,
     inlineAssets: true,
   },
+  screenshotsFolder: "cypress/screenshot/test2.cy.js/jenkins pipeline -- simple test script 2 (failed).png"
 });
