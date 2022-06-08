@@ -17,5 +17,5 @@ module.exports = defineConfig({
     embeddedScreenshots: true,
     inlineAssets: true,
   },
-  screenshotsFolder: "cypress/screenshots/**/**",
+  screenshotsFolder: "cypress/screenshots/",
 });
