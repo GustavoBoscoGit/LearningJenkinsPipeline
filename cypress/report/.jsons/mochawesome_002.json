@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-06-08T16:08:55.572Z",
-    "end": "2022-06-08T16:09:06.496Z",
-    "duration": 10924,
+    "start": "2022-06-08T16:18:22.806Z",
+    "end": "2022-06-08T16:18:32.517Z",
+    "duration": 9711,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2128b3bf-7232-4413-b34d-dc2fba600d59",
+      "uuid": "9be7777b-cdb4-4783-ac09-56a00f86c428",
       "title": "",
       "fullFile": "cypress\\e2e\\test2.cy.js",
       "file": "cypress\\e2e\\test2.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bda220fe-4ce5-4e35-98fa-501c73f2f489",
+          "uuid": "3a07d11f-c932-4bdd-9010-430b8a0aeddd",
           "title": "jenkins pipeline",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "simple test script",
               "fullTitle": "jenkins pipeline simple test script",
               "timedOut": null,
-              "duration": 8192,
+              "duration": 7003,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.get(':nth-child(2) > :nth-child(1) > .card-up').click();\ncy.get(':nth-child(2) > .element-list > .menu-list > #item-0').click();\ncy.get('#firstName').type('test');\ncy.get('#lastName').type('test');\ncy.get('#userEmail').type('test.test@gmail.com');\ncy.get('#genterWrapper > .col-md-9 > :nth-child(1) > .custom-control-label').click();\ncy.get('#userNumber').type('7688879999');\ncy.get('#submit').click({\n  force: true\n});",
               "err": {},
-              "uuid": "9b3621e7-b236-4905-a403-b30b911b35a7",
-              "parentUUID": "bda220fe-4ce5-4e35-98fa-501c73f2f489",
+              "uuid": "5aebea54-c75b-4739-900e-6263104591d8",
+              "parentUUID": "3a07d11f-c932-4bdd-9010-430b8a0aeddd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9b3621e7-b236-4905-a403-b30b911b35a7"
+            "5aebea54-c75b-4739-900e-6263104591d8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8192,
+          "duration": 7003,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
