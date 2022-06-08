@@ -18,7 +18,7 @@ describe('jenkins pipeline', ()=>{
     it('simple test script 2', ()=>{
         cy.get(':nth-child(2) > :nth-child(1) > .card-up').click()
         cy.get(':nth-child(2) > .element-list > .menu-list > #item-0').click()
-        cy.get('#firstame').type('test')
+        cy.get('#firstName').type('test')
         cy.get('#lastName').type('test')
         cy.get('#userEmail').type('test.test@gmail.com')
         cy.get('#genterWrapper > .col-md-9 > :nth-child(1) > .custom-control-label').click()
