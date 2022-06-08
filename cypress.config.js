@@ -17,5 +17,5 @@ module.exports = defineConfig({
     inlineAssets: true,
     screenshotOnRunFailure: true,
   },
-  screenshotsFolder: "cypress/screenshots/**",
+  screenshotsFolder: "cypress/screenshots/test2.cy.js/",
 });
