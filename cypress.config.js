@@ -13,7 +13,7 @@ module.exports = defineConfig({
     overwrite: true,
     html: true,
     json: true,
-    embeddedScreenshots: true,
+    embeddedScreenshots: false,
     inlineAssets: true,
   },
 });
