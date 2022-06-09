@@ -11,9 +11,12 @@ module.exports = defineConfig({
   reporterOptions: {
     reportTitle: "Cypress Test Report",
     reportDir: "cypress/report",
+    charts: true,
     overwrite: true,
     html: true,
     json: true,
     embeddedScreenshots: true,
+    inlineAssets: true,
   },
+  video: false,
 });
