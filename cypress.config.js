@@ -33,7 +33,7 @@ module.exports = defineConfig({
       reportTitle: "Cypress Test Report",
       reportDir: "cypress/report",
       overwrite: true,
-      html: true,
+      html: false,
       json: true,
       quite: true,
       embeddedScreenshots: true,

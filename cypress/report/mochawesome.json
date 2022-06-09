@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 1,
-    "start": "2022-06-09T20:03:57.582Z",
-    "end": "2022-06-09T20:04:12.901Z",
-    "duration": 15319,
+    "start": "2022-06-09T20:12:17.090Z",
+    "end": "2022-06-09T20:12:32.521Z",
+    "duration": 15431,
     "testsRegistered": 2,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f9b44957-bda1-450e-9e10-b41473ca129c",
+      "uuid": "cbec065a-3b7e-413e-ae7e-18ca5f36b083",
       "title": "",
       "fullFile": "cypress\\e2e\\test2.cy.js",
       "file": "cypress\\e2e\\test2.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a2de83b1-0f17-4608-9074-47096d885561",
+          "uuid": "9f192895-0255-4fce-9628-a7b0b8435ddf",
           "title": "jenkins pipeline",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "simple test script",
               "fullTitle": "jenkins pipeline simple test script",
               "timedOut": null,
-              "duration": 6881,
+              "duration": 6731,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get(':nth-child(2) > :nth-child(1) > .card-up').click();\ncy.get(':nth-child(2) > .element-list > .menu-list > #item-0').click();\ncy.get('#firstName').type('test');\ncy.get('#lastName').type('test');\ncy.get('#userEmail').type('test.test@gmail.com');\ncy.get('#genterWrapper > .col-md-9 > :nth-child(1) > .custom-control-label').click();\ncy.get('#userNumber').type('7688879999');\ncy.get('#submit').click({\n  force: true\n});",
               "err": {},
-              "uuid": "14d2aeef-e919-4450-8039-f2389893e69c",
-              "parentUUID": "a2de83b1-0f17-4608-9074-47096d885561",
+              "uuid": "195d6829-4ef4-48d3-8f72-853c7f276ded",
+              "parentUUID": "9f192895-0255-4fce-9628-a7b0b8435ddf",
               "isHook": false,
               "skipped": false
             },
@@ -56,35 +56,35 @@
               "title": "simple test script",
               "fullTitle": "jenkins pipeline simple test script",
               "timedOut": null,
-              "duration": 5926,
+              "duration": 5989,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
-              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Screenshot\",\n        \"value\": \"cypress/mochareports/screenshots/2022-06-09T20.04.12.640Z.png\"\n      }\n    ]\n  ]\n}",
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Screenshot\",\n        \"value\": \"cypress/mochareports/screenshots/2022-06-09T20.12.32.265Z.png\"\n      }\n    ]\n  ]\n}",
               "code": "cy.get(':nth-child(2) > :nth-child(1) > .card-up').click();\ncy.get(':nth-child(2) > .element-list > .menu-list > #item-0').click();\ncy.get('#firstame').type('test');\ncy.get('#lastName').type('test');\ncy.get('#userEmail').type('test.test@gmail.com');\ncy.get('#genterWrapper > .col-md-9 > :nth-child(1) > .custom-control-label').click();\ncy.get('#userNumber').type('7688879999');\ncy.get('#submit').click({\n  force: true\n});",
               "err": {
                 "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#firstame`, but never found it.",
                 "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#firstame`, but never found it.\n    at Context.eval (https://demoqa.com/__cypress/tests?p=cypress\\e2e\\test2.cy.js:119:8)",
                 "diff": null
               },
-              "uuid": "03ee1059-c33c-4be3-b3af-c7b2377dc32e",
-              "parentUUID": "a2de83b1-0f17-4608-9074-47096d885561",
+              "uuid": "6bba5730-fb31-4db5-9660-136bd8e9e741",
+              "parentUUID": "9f192895-0255-4fce-9628-a7b0b8435ddf",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "14d2aeef-e919-4450-8039-f2389893e69c"
+            "195d6829-4ef4-48d3-8f72-853c7f276ded"
           ],
           "failures": [
-            "03ee1059-c33c-4be3-b3af-c7b2377dc32e"
+            "6bba5730-fb31-4db5-9660-136bd8e9e741"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 12807,
+          "duration": 12720,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
