@@ -35,7 +35,7 @@ module.exports = defineConfig({
     html: true,
     json: true,
     embeddedScreenshots: true,
-    inlineAssets: true,
+    inlineAssets: false,
   },
   video: false,
   screenshotsFolder: "cypress/mochareports/screenshots/",
