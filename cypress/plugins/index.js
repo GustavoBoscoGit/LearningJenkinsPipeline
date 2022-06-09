@@ -25,16 +25,28 @@ module.exports = (on, config) => {
   require('cypress-mochawesome-reporter/plugin')(on);
 };
 
-// const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
+//Screenshots names can be too long for the file system, taht why we truncate them
+module.exports = (on, config) => {
+  on('after:screenshot', (details) => {
+      console.log(details) // print all details to terminal
+      //const fileName = details.takenAt.replace(":",".") +".png"; // This fails
 
-// module.exports = (on) => {
-//   on('before:run', async (details) => {
-//     console.log('override before:run');
-//     await beforeRunHook(details);
-//   });
+      const fileName = details.takenAt.replace(" ","-","(",")") +".png"; // This fails
+      console.log(fileName);
+      //const fileName = "test.png"; // This works
+      const newPath = "cypress/screenshots/"+ fileName;
+      console.log(newPath);
 
-//   on('after:run', async () => {
-//     console.log('override after:run');
-//     await afterRunHook();
-//   });
-// };
+      return new Promise((resolve, reject) => {
+          // fs.rename moves the file to the existing directory 'new/path/to'
+          // and renames the image to 'screenshot.png'
+          fs.rename(details.path, newPath, (err) => {
+              if (err) return reject(err)
+
+              // because we renamed and moved the image, resolve with the new path
+              // so it is accurate in the test results
+              resolve({ path: newPath })
+          })
+      })
+  })
+}
