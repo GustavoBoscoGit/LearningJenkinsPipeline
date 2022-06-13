@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-06-13T13:39:28.187Z",
+    "end": "2022-06-13T13:39:46.272Z",
+    "duration": 18085,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6a4325e1-a7d3-4911-9463-0b935cb3bb82",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test2.cy.js",
+      "file": "cypress\\e2e\\test2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "96b9aa01-d1e1-4352-8b5f-e3959e5fcaa7",
+          "title": "jenkins pipeline",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "simple test script",
+              "fullTitle": "jenkins pipeline simple test script",
+              "timedOut": null,
+              "duration": 7859,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(':nth-child(2) > :nth-child(1) > .card-up').click();\ncy.get(':nth-child(2) > .element-list > .menu-list > #item-0').click();\ncy.get('#firstName').type('test');\ncy.get('#lastName').type('test');\ncy.get('#userEmail').type('test.test@gmail.com');\ncy.get('#genterWrapper > .col-md-9 > :nth-child(1) > .custom-control-label').click();\ncy.get('#userNumber').type('7688879999');\ncy.get('#submit').click({\n  force: true\n});",
+              "err": {},
+              "uuid": "225be14e-e7ba-4875-8b13-85da79faa1cd",
+              "parentUUID": "96b9aa01-d1e1-4352-8b5f-e3959e5fcaa7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "simple test script",
+              "fullTitle": "jenkins pipeline simple test script",
+              "timedOut": null,
+              "duration": 7122,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(':nth-child(2) > :nth-child(1) > .card-up').click();\ncy.get(':nth-child(2) > .element-list > .menu-list > #item-0').click();\ncy.get('#firstame').type('test');\ncy.get('#lastName').type('test');\ncy.get('#userEmail').type('test.test@gmail.com');\ncy.get('#genterWrapper > .col-md-9 > :nth-child(1) > .custom-control-label').click();\ncy.get('#userNumber').type('7688879999');\ncy.get('#submit').click({\n  force: true\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#firstame`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#firstame`, but never found it.\n    at Context.eval (https://demoqa.com/__cypress/tests?p=cypress\\e2e\\test2.cy.js:119:8)",
+                "diff": null
+              },
+              "uuid": "f29ea4d1-bc6c-4161-8bac-56284f2fa97b",
+              "parentUUID": "96b9aa01-d1e1-4352-8b5f-e3959e5fcaa7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "225be14e-e7ba-4875-8b13-85da79faa1cd"
+          ],
+          "failures": [
+            "f29ea4d1-bc6c-4161-8bac-56284f2fa97b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 14981,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

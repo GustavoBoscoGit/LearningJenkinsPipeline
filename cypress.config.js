@@ -10,7 +10,7 @@ module.exports = defineConfig({
 
         //const fileName = details.specName +".1png"; // This fail
         //const fileName = "screenshot.png"; // This works
-        const newPath = "cypress/mochareports/screenshots/" + fileName;
+        const newPath = "cypress/results/mochaScreenshot/" + fileName;
 
         return new Promise((resolve, reject) => {
           // fs.rename moves the file to the existing directory 'new/path/to'
@@ -25,21 +25,16 @@ module.exports = defineConfig({
         });
       });
     },
+    video: false,
   },
-  reporter: "cypress-multi-reporters",
+  reporter: 'mochawesome',
   reporterOptions: {
-    reporterEnabled: "mochawesome",
-    mochawesomeReporterOptions: {
-      reportTitle: "Cypress Test Report",
-      reportDir: "cypress/report",
-      overwrite: true,
-      html: false,
-      json: true,
-      quite: true,
-      embeddedScreenshots: true,
-      screenshotOnRunFailure: true,
-    },
+    reportDir: 'cypress/results',
+    overwrite: true,
+    html: false,
+    json: true,
+    embeddedScreenshots: true,
+    inlineAssets: true,
   },
-  video: false,
-  screenshotsFolder: "cypress/mochareports/screenshots/",
+  screenshotsFolder: 'cypress/results/mochaScreenshot'
 });
