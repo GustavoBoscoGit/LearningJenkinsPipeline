@@ -29,6 +29,7 @@ module.exports = defineConfig({
   },
   reporter: 'mochawesome',
   reporterOptions: {
+    screenshotOnRunFailure: true,
     reportDir: 'cypress/results',
     overwrite: true,
     html: false,
