@@ -9,3 +9,4 @@ module.exports = defineConfig({
     video: false,
   },
 });
+//npx cypress run --config video=false --env allure=true
